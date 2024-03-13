@@ -4,6 +4,9 @@ using DotNetCoreSqlDb.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add database context and cache
+// bilchip@gmail.com: link: https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app
+// commit 01
+
 builder.Services.AddDbContext<MyDatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbConnection")));
 builder.Services.AddDistributedMemoryCache();
