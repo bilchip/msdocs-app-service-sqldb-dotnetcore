@@ -4,9 +4,12 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationInsightsResourceId>/subscriptions/6822a156-20f4-4617-94c5-8614ee7eae94/resourceGroups/iho-test-dbwebapp-rg/providers/microsoft.insights/components/iho-test-dbwebapp-ai</ApplicationInsightsResourceId>
+    <UserSecretsId>8b3eb3ea-9503-43d5-a8f4-25a9aa709f3e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>

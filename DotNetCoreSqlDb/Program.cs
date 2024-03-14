@@ -20,6 +20,7 @@ builder.Services.AddControllersWithViews();
 
 // Add App Service logging
 builder.Logging.AddAzureWebAppDiagnostics();
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 
 var app = builder.Build();
 
